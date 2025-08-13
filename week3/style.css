@@ -1,0 +1,35 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: blue;
+}
+
+p {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid rgb(160, 120, 128);
+  background-color: beige;
+  height: 200px;
+  /* awalnya height doang tpi jadinya lewat table jadi ditambah min */
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 2px dashed red;
+}
+
+.vcenter {
+  line-height: 155px;
+}
+
+span {
+  display: block;
+  /* block tu biar kebawah */
+  color: red;
+  font-size: 4rem;
+  display: none;
+  /* none jadi ilang */
+}
