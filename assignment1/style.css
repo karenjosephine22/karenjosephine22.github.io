@@ -1,38 +1,38 @@
 body {
   background-color: rgb(0, 0, 0);
   font-family: "Inter", sans-serif;
+  /* If there's is no Inter as the font, sans-serif would come as the second option */
   text-align: center;
   margin: auto;
   max-width: 1000px;
   justify-content: center;
   align-items: center;
-  font-family: "Intel", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 1.1rem;
+  /* this is the body for the whole website, making it align to the center, Inter as the font family, black as the background colour, and so on */
 }
 
 h1 {
   color: rgb(129, 11, 239);
   font-weight: bold;
-  font-size: 36px;
+  font-size: 46px;
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
-}
-h2 {
-  color: limegreen;
+  /* I'm using archivo black for the heading because of it's bold look */
 }
 
-/* p {
+h2 {
+  color: rgb(255, 255, 118);
   font-weight: bold;
-} */
+}
 
 span {
   display: block;
-  /* block tu biar kebawah */
+  /* learning from the previous class, I'm using block so the text would come out in a different line */
   color: rgb(255, 255, 118);
   font-size: 1rem;
   padding: 10px;
@@ -43,6 +43,7 @@ section {
   min-height: 100px;
   justify-content: center;
   padding: 20px;
+  /* this one I used mainly for the images, to make it center aligned, with padding, and min-height and width */
 }
 
 .outerone {
@@ -90,6 +91,7 @@ section {
 .cyanbox {
   background-color: rgb(36, 255, 237);
   padding: 10px;
+  /* Here I used padding to make the overall image looks more neat and clean */
   color: rgb(255, 0, 157);
   flex: 1;
 }
@@ -98,7 +100,7 @@ section {
   background-color: rgb(255, 0, 157);
   padding: 10px;
   color: rgb(36, 255, 237);
-  flex: 3;
+  flex: 1;
 }
 
 .purplebox {
@@ -106,11 +108,20 @@ section {
   padding: 10px;
   color: rgb(255, 255, 0);
   flex: 1;
+  grid-column: 1/4;
+  /* used grid-column so it fits the whole grid layout */
 }
 
-.yellowbox {
-  background-color: rgb(255, 255, 0);
+.grid-container {
+  border: 4px double rgb(255, 255, 0);
+  min-width: 500px;
+  min-height: 100%;
   padding: 10px;
-  color: rgb(129, 11, 239);
-  flex: 1;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1/2fr 1fr;
+  /* for the second row, because I only want to make question 7 fit the layout, I used 1/2 fr for the second one*/
 }
+
+/* I know my overall website looks simple, but I guess I kind of want it to look that way, so in a sense it was intentional. It wasn’t to create something overly complex, but to practice and apply the core design and coding principles we’ve been learning so far in this course, and through this process, I experimented with typography, colour contrast, layout hierarchy, and clear Q&A structure. Even though the result is minimal, building it taught me how HTML and CSS decisions affect user experience, it's readability, and overall tone. I'm exited to learn more in the future (especially with animation hoho). */
