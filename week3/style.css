@@ -30,6 +30,6 @@ span {
   /* block tu biar kebawah */
   color: red;
   font-size: 4rem;
-  display: none;
+  /* display: none; */
   /* none jadi ilang */
 }
