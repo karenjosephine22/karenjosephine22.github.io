@@ -48,3 +48,22 @@ function toggleMe() {
   console.log(myImg);
   myImg.classList.toggle("round");
 }
+
+const myImg = document.querySelector("img");
+console.log(myImg);
+myImg.addEventListener("mouseenter", addMe);
+myImg.addEventListener("mouseleave", removeMe);
+myImg.addEventListener("click", handleClick);
+
+function addMe() {
+  myImg.classList.add("round");
+}
+
+function removeMe() {
+  myImg.classList.remove("round");
+}
+
+function handleClick() {
+  console.log("did you just click me??");
+  topHeading.textContent = "My Cat!";
+}
