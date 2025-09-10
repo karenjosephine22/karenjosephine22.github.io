@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Exercise</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Practicing audio on web!</h1>
+    <audio src="airport-1.mp3" controls id="my-audio">
+      Sorry, your browser does not support audio.
+    </audio>
+    <button id="play-button">play audio</button>
+    <!-- mending id daripada class biar lebi specific, to uniquely identify a spesific item -->
+    <button id="pause-button">pause audio</button>
+
+    <button id="pop-button">pop sound</button>
+    <audio src="pop-1.mp3" controls id="pop-sound">
+      Sorry, your browser does not support audio.
+    </audio>
+
+    <video src="stardust-1.mp4" controls id="my-video"></video>
+  </body>
+</html>

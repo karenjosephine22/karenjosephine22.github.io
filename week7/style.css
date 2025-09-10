@@ -1,0 +1,28 @@
+audio,
+video {
+  display: block;
+  /* i need my own row,, kalo gaada buttonnya jadi disebelahnya */
+  margin-bottom: 20px;
+}
+
+video {
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  /* untuk interactivity ceunah, biar keliatan bisa dilakuin sesuatunya */
+  background-color: aliceblue;
+  margin-right: 10px;
+}
+
+button:hover {
+  scale: 0.9;
+  /* jadi makin gede kalo mau dipencet, and better to actually scale down for the feeling of pressing the button */
+}
