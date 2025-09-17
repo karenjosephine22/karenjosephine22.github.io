@@ -1,3 +1,12 @@
+const videoList = [
+  { id: 1, src: "stardust-1.mp4" },
+  { id: 2, src: "zenscape-1.mp4" },
+  {
+    id: 3,
+    src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4",
+  },
+];
+
 // -------------------------------------------------------
 // first course of action: get access to the video
 const myVideo = document.querySelector("#my-video");
@@ -149,5 +158,38 @@ function goFullScreen() {
   } else {
     document.exitFullscreen();
   }
+}
+// -------------------------------------------------------
+
+// -------------------------------------------------------
+// playlist logic
+// 1. get access to all the playlist buttons
+const stardustButton = document.querySelector("#stardust-vid-button");
+console.log(stardustButton);
+const zenscapeButton = document.querySelector("#zenscape-vid-button");
+console.log(zenscapeButton);
+const musicVideoButton = document.querySelector("#musicvideo-vid-button");
+console.log(musicVideoButton);
+
+// 2. add addevent listeners for the click on this button
+stardustButton.addEventListener("click", function () {
+  chooseVideo(0);
+});
+
+zenscapeButton.addEventListener("click", function () {
+  chooseVideo(1);
+});
+
+musicVideoButton.addEventListener("click", function () {
+  chooseVideo(2);
+});
+
+// 3. write the callback function that needs to fullscreen the video
+function chooseVideo(no) {
+  let currentVideo = videoList[no].src;
+  console.log(currentVideo);
+  myVideo.src = currentVideo;
+  myVideo.load();
+  myVideo.play();
 }
 // -------------------------------------------------------
