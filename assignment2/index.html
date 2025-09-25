@@ -4,35 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Second Assignment</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <!-- For this assignment I've choosen the crafting tutorial-->
     <!-- Hence I added an icon taken from the favicon website, a colour pallete-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&display=swap"
       rel="stylesheet"
     />
-    <!-- Again, I'm using Archivo Black for headings/title because it feels bold and impactful and Inter for body text since it looks clean and modern. -->
+    <!-- Here, I'm using Neonderthaw for headings/title because its like a playful, hand drawn style that reflects the creative DIY spirit  -->
+    <!-- And again Inter for body text since it looks clean and modern. Plus to make sure that the instructions and step-by-step detail remain clear and easy to read. -->
     <link rel="stylesheet" href="style.css" />
     <link rel="resetsheet" href="reset.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <h1>~~~~Handheld Windmill Fan ~~~~</h1>
+
+    <section class="materials">
+      <h2>Materials & Tools</h2>
+      <ul class="materials-list">
+        <li><input type="checkbox" /> Cardstock (15×15 cm)</li>
+        <li><input type="checkbox" /> Decorative paper / paint</li>
+        <li><input type="checkbox" /> Wooden skewer / handle</li>
+        <li><input type="checkbox" /> Small bead / washer</li>
+        <li><input type="checkbox" /> Brass brad / push pin</li>
+        <li><input type="checkbox" /> Scissors</li>
+        <li><input type="checkbox" /> Glue</li>
+      </ul>
+    </section>
+
     <main class="double-border">
       <div class="main-screen">
-        <video src="stardust-1.mp4" id="my-video"></video>
+        <video
+          src="berry-bunch_handheld-windmill-fan.mp4"
+          id="my-video"
+        ></video>
       </div>
-      <div class="playlist">
-        <button class="double-border" id="stardust-vid-button">Stardust</button>
-        <button class="double-border" id="zenscape-vid-button">Zenscape</button>
-        <button class="double-border" id="musicvideo-vid-button">
-          Music Video
-        </button>
-      </div>
+      <!-- This video will be my main focus for this project, and i'll name it my-video -->
+
       <div class="controls">
         <button id="play-pause-button" class="double-border">
           <img
@@ -55,8 +69,13 @@
             id="fast-forward-img"
           />
         </button>
-        <button id="step1-button" class="double-border">1</button>
-        <button id="step2-button" class="double-border">2</button>
+        <button id="replay-button" class="double-border">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/replay.png"
+            alt=""
+            id="replay-img"
+          />
+        </button>
         <div id="progress-bar-container"><span id="progress-bar"></span></div>
         <button id="fullscreen-button" class="double-border">
           <img
@@ -75,6 +94,17 @@
         <div id="likes"></div>
       </div>
     </main>
+
+    <section class="double-border">
+      <button id="step1-button" class="double-border">1</button>
+      <button id="step2-button" class="double-border">2</button>
+      <button id="step3-button" class="double-border">3</button>
+      <button id="step4-button" class="double-border">4</button>
+      <button id="step5-button" class="double-border">5</button>
+      <button id="step6-button" class="double-border">6</button>
+    </section>
+
+    <h1>~~~~~~~~~~~~~~~~~~~</h1>
     <footer>Icons by <a href="https://icons8.com/">Icons8</a></footer>
   </body>
 </html>

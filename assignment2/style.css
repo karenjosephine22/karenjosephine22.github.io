@@ -1,78 +1,103 @@
 body {
+  background: radial-gradient(circle, rgb(80, 228, 183), rgb(3, 61, 46));
+  /* At first, I wanted to use an image for the background but it turns out looking weird.. */
+  /* So then I thought about gradient colours, using different green tones */
+  font-family: "Inter", sans-serif;
+  /* If there's is no Inter as the font, sans-serif would come as the second option */
+  text-align: center;
+  margin: auto;
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  font-family: "REM", sans-serif;
+  gap: 10px;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: rgb(202, 151, 122);
+  color: rgb(199, 249, 255);
+  padding-top: 20px;
 }
 
-a {
-  color: rgb(202, 151, 122);
+h1 {
+  color: rgb(199, 249, 255);
+  font-weight: 400;
+  font-size: 60px;
+  font-family: "Neonderthaw", sans-serif;
+}
+
+#materials h3 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+#materials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 8px;
+}
+#materials label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 14px;
+  cursor: pointer;
+}
+#materials input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
 }
 
 .double-border {
-  border: 6px double rgb(65, 41, 27);
+  border: 4px double rgb(199, 249, 255);
   border-radius: 16px;
+  padding: 10px;
+  /* I'll be mainly using double border so that it matches the title/heading */
+}
+
+section {
+  width: 770px;
 }
 
 video {
-  width: 800px;
-  /* width: 100%; */
+  width: 750px;
   height: auto;
   border-radius: 12px;
 }
 
-h1 {
-  font-size: 2.3rem;
-  font-weight: bold;
-}
 .main-screen,
 .controls {
   display: flex;
-  /* gap: 10px; */
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 10px; */
+  padding: 10px;
 }
 
 .main-screen {
-  /* background-color: antiquewhite; */
   padding: 10px;
-  width: 100%;
-}
-
-.controls {
-  gap: 10px;
-  padding: 10px;
-}
-
-.playlist {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-
-  padding: 10px;
-  border-bottom: 6px double rgb(65, 41, 27);
+  width: auto;
 }
 
 #progress-bar-container {
   width: 100%;
   height: 10px;
   background-color: gray;
+  border-radius: 30px;
+  /* adding border-radius so it looks neater and rounded */
 }
+
 #progress-bar {
   width: 0%;
-  display: block;
-  background-color: coral;
   height: 100%;
+  display: block;
+  background-color: rgb(2, 83, 40);
   transition: width 0.2s ease;
+  border-radius: 30px;
 }
 
 button {
@@ -80,7 +105,6 @@ button {
   padding: 10px;
   font-size: 1.2rem;
   color: black;
-  /* color: rgb(202, 151, 122); */
   border-radius: 12px;
   background-color: rgba(250, 235, 215, 0.588);
 }
@@ -91,6 +115,6 @@ button:hover {
 }
 
 #likes {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: rgb(168, 55, 55);
 }
