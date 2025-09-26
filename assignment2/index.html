@@ -25,86 +25,146 @@
   <body>
     <h1>~~~~Handheld Windmill Fan ~~~~</h1>
 
-    <section class="materials">
-      <h2>Materials & Tools</h2>
-      <ul class="materials-list">
-        <li><input type="checkbox" /> Cardstock (15×15 cm)</li>
-        <li><input type="checkbox" /> Decorative paper / paint</li>
-        <li><input type="checkbox" /> Wooden skewer / handle</li>
-        <li><input type="checkbox" /> Small bead / washer</li>
-        <li><input type="checkbox" /> Brass brad / push pin</li>
-        <li><input type="checkbox" /> Scissors</li>
-        <li><input type="checkbox" /> Glue</li>
-      </ul>
-    </section>
+    <main>
+      <section class="materials">
+        <!-- Tools and Materials,, 
+         I've indluded this section so that it'll be easier for viewer to check what they need in this crafting tutorial
+         I'm made it in a form of checkbox hoping that it would help users remember what else they need -->
+        <h2>Tools and Materials</h2>
+        <ul class="materials-list">
+          <li><input type="checkbox" /> Cardstock (15×15 cm)</li>
+          <li><input type="checkbox" /> Decorative paper / paint</li>
+          <li><input type="checkbox" /> Wooden skewer / handle</li>
+          <li><input type="checkbox" /> Small bead / washer</li>
+          <li><input type="checkbox" /> Brass brad / push pin</li>
+          <li><input type="checkbox" /> Scissors</li>
+          <li><input type="checkbox" /> Glue / hot glue gun</li>
+          <li><input type="checkbox" /> Ruler, Pencil, Eraser</li>
+        </ul>
+      </section>
 
-    <main class="double-border">
-      <div class="main-screen">
-        <video
-          src="berry-bunch_handheld-windmill-fan.mp4"
-          id="my-video"
-        ></video>
-      </div>
-      <!-- This video will be my main focus for this project, and i'll name it my-video -->
+      <section class="double-border">
+        <div class="main-screen">
+          <video
+            src="berry-bunch_handheld-windmill-fan.mp4"
+            id="my-video"
+          ></video>
+        </div>
+        <!-- This video will be my main focus for this project, and I'll name it my-video -->
 
-      <div class="controls">
-        <button id="play-pause-button" class="double-border">
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
-            alt=""
-            id="play-pause-img"
-          />
-        </button>
-        <button id="mute-unmute-button" class="double-border">
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
-            alt=""
-            id="mute-unmute-img"
-          />
-        </button>
-        <button id="fast-forward-button" class="double-border">
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/fast-forward.png"
-            alt=""
-            id="fast-forward-img"
-          />
-        </button>
-        <button id="replay-button" class="double-border">
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/replay.png"
-            alt=""
-            id="replay-img"
-          />
-        </button>
-        <div id="progress-bar-container"><span id="progress-bar"></span></div>
-        <button id="fullscreen-button" class="double-border">
-          <img
-            src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
-            alt=""
-            id="fullscreen-img"
-          />
-        </button>
-        <button id="heart-button" class="double-border">
-          <img
-            src="https://img.icons8.com/?size=36&id=DFU1kReSUccu&format=png&color=000000"
-            alt=""
-            id="heart-img"
-          />
-        </button>
-        <div id="likes"></div>
-      </div>
+        <div class="controls">
+          <!-- I'm using double border for every button because it looks more coherent and neater -->
+          <!-- Here are some buttons that I include in the website -->
+          <button id="play-pause-button" class="double-border">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
+              alt=""
+              id="play-pause-img"
+            />
+          </button>
+          <button id="mute-unmute-button" class="double-border">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+              alt=""
+              id="mute-unmute-img"
+            />
+          </button>
+          <button id="fast-forward-button" class="double-border">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/fast-forward.png"
+              alt=""
+              id="fast-forward-img"
+            />
+          </button>
+          <button id="replay-button" class="double-border">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/replay.png"
+              alt=""
+              id="replay-img"
+            />
+          </button>
+          <!-- Then I've also included a progress-bar to show the progress of the tutorial video -->
+          <!-- I wanted to include the time of the video but it didnt work, so I've removed it TT -->
+          <div id="progress-bar-container"><span id="progress-bar"></span></div>
+          <button id="fullscreen-button" class="double-border">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+              alt=""
+              id="fullscreen-img"
+            />
+          </button>
+          <button id="heart-button" class="double-border">
+            <img
+              src="https://img.icons8.com/?size=36&id=DFU1kReSUccu&format=png&color=000000"
+              alt=""
+              id="heart-img"
+            />
+          </button>
+          <div id="likes"></div>
+        </div>
+      </section>
     </main>
 
-    <section class="double-border">
-      <button id="step1-button" class="double-border">1</button>
-      <button id="step2-button" class="double-border">2</button>
-      <button id="step3-button" class="double-border">3</button>
-      <button id="step4-button" class="double-border">4</button>
-      <button id="step5-button" class="double-border">5</button>
-      <button id="step6-button" class="double-border">6</button>
+    <section class="double-border-steps">
+      <div>
+        <!-- Step buttons: you can jump through the steps and rewatch it again  -->
+        <div class="step-buttons">
+          <button id="step1-button" class="double-border">- 1 -</button>
+          <button id="step2-button" class="double-border">- 2 -</button>
+          <button id="step3-button" class="double-border">- 3 -</button>
+          <button id="step4-button" class="double-border">- 4 -</button>
+          <button id="step5-button" class="double-border">- 5 -</button>
+          <button id="step6-button" class="double-border">- 6 -</button>
+          <button id="step7-button" class="double-border">- 7 -</button>
+          <button id="step8-button" class="double-border">- 8 -</button>
+          <button id="step9-button" class="double-border">- 9 -</button>
+        </div>
+
+        <h2>~ Step-by-step ~</h2>
+        <!-- Here I added step by step instructions: 
+         so that it's easier for someone who cannot access their audio or in a public space,
+         and to be more clear of the steps taken-->
+        <p class="step-list">
+          (1) Cut a sheet of cardstock to a clean square (e.g. 15×15 cm). <br />
+          (2) Mark the exact center with a pencil. <br />
+          (3) From each corner, draw a diagonal line toward the center and cut,
+          stopping around half the length from the center. <br />
+          (4) Fold every other corner point toward the center to form the
+          pinwheel shape. <br />
+          (5) Stack folded points, make a circle using the sheet leftovers and
+          make a hole in the middle. <br />
+          (6) Place a bead/washer, and push the brad through the center. <br />
+          (7) Insert the brad into your skewer/dowel and make sure it spins
+          freely. <br />
+          (8) Adjust tightness with a washer/glue if needed. <br />
+          (9) Blow gently to test spin and decorate the handle. Done! <br />
+        </p>
+      </div>
     </section>
 
     <h1>~~~~~~~~~~~~~~~~~~~</h1>
-    <footer>Icons by <a href="https://icons8.com/">Icons8</a></footer>
+
+    <footer>
+      <p>
+        &copy; 2025 Crafting Tutorial Website. All rights reserved. <br />
+        Video tutorial:
+        <!-- this is the footer section to show where I got the video and the things I've used making this website -->
+        <a
+          href="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Berry Bunch Handheld Windmill Fan</a
+        >.<br />
+        Attribution code:
+        <a
+          href="https://github.com/p-mcmahon-rmit/p-mcmahon-rmit.github.io/blob/main/a2/attributions.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >.<br />
+        Icons (favicons) by their respective creators and by
+        <a href="https://icons8.com">Icons8</a>
+      </p>
+    </footer>
   </body>
 </html>

@@ -81,6 +81,15 @@ console.log(step5Button);
 const step6Button = document.querySelector("#step6-button");
 console.log(step6Button);
 
+const step7Button = document.querySelector("#step7-button");
+console.log(step7Button);
+
+const step8Button = document.querySelector("#step8-button");
+console.log(step8Button);
+
+const step9Button = document.querySelector("#step9-button");
+console.log(step9Button);
+
 // Second step: addEventListeners
 step1Button.addEventListener("click", gotoStep1);
 step2Button.addEventListener("click", gotoStep2);
@@ -88,30 +97,46 @@ step3Button.addEventListener("click", gotoStep3);
 step4Button.addEventListener("click", gotoStep4);
 step5Button.addEventListener("click", gotoStep5);
 step6Button.addEventListener("click", gotoStep6);
+step7Button.addEventListener("click", gotoStep7);
+step8Button.addEventListener("click", gotoStep8);
+step9Button.addEventListener("click", gotoStep9);
 
-// Adding functions
+// Adding functions and making sure the time matches with the steps
 function gotoStep1() {
-  myVideo.currentTime = 17;
+  myVideo.currentTime = 32;
 }
 
 function gotoStep2() {
-  myVideo.currentTime = 43;
+  myVideo.currentTime = 53;
 }
 
 function gotoStep3() {
-  myVideo.currentTime = 43;
+  myVideo.currentTime = 70;
 }
+// using seconds to determine the time
 
 function gotoStep4() {
-  myVideo.currentTime = 43;
+  myVideo.currentTime = 98;
 }
 
 function gotoStep5() {
-  myVideo.currentTime = 43;
+  myVideo.currentTime = 120;
 }
 
 function gotoStep6() {
-  myVideo.currentTime = 43;
+  myVideo.currentTime = 169;
+}
+
+function gotoStep7() {
+  myVideo.currentTime = 187;
+}
+
+function gotoStep8() {
+  myVideo.currentTime = 218;
+}
+
+function gotoStep9() {
+  myVideo.currentTime = 267;
 }
 // -------------------------------------------------------
 
@@ -138,7 +163,6 @@ myVideo.addEventListener("timeupdate", updateProgress);
 
 function updateProgress() {
   let duration = (myVideo.currentTime / myVideo.duration) * 100;
-  // console.log(duration);
   progressBar.style.width = duration + "%";
 }
 
@@ -149,6 +173,7 @@ console.log(fullScreenButton);
 fullScreenButton.addEventListener("click", goFullScreen);
 myVideo.addEventListener("dblclick", goFullScreen);
 
+// then you can watch the video in full screen so that it's easier to focus
 function goFullScreen() {
   if (!document.fullscreenElement) {
     myVideo.requestFullscreen();
@@ -169,3 +194,5 @@ function replayVideo() {
   myVideo.play();
   // play from the beginning
 }
+
+// okiee that's the end of this project, thankyou!!
