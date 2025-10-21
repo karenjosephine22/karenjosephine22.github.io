@@ -1,0 +1,48 @@
+body {
+  background: black;
+  font-family: "Caveat", sans-serif;
+  /* If there's is no Caveat as the font, sans-serif would come as the second option */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #f8f8f8;
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: "Caprasimo", cursive;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.instrument img {
+  width: 160px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+/* Hover reveals color image */
+.instrument img:hover {
+  content: attr(data-color);
+  opacity: 0;
+}
