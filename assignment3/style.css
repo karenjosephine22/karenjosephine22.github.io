@@ -3,8 +3,7 @@ body {
   font-family: "Caveat", sans-serif;
   /* If there's is no Caveat as the font, sans-serif would come as the second option */
   margin: auto;
-  display: flex;
-  flex-direction: column;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -16,8 +15,23 @@ body {
   padding-top: 20px;
 }
 
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 h1 {
-  font-family: "Caprasimo", cursive;
+  font-family: "Caprasimo", sans-serif;
   font-size: 3rem;
   margin-bottom: 0;
 }
@@ -27,22 +41,65 @@ p {
   font-size: 1.2rem;
 }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.instrument img {
-  width: 160px;
-  transition: opacity 0.5s ease;
+.hover-img {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: auto;
   cursor: pointer;
 }
 
-/* Hover reveals color image */
-.instrument img:hover {
-  content: attr(data-color);
+.hover-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+/* hover image sits directly above the default one */
+.hover-img .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
+  pointer-events: none; /* allows clicking the link */
+}
+
+/* when hovering, swap opacity */
+.hover-img:hover .hover {
+  opacity: 1;
+}
+
+.hover-img:hover .default {
+  opacity: 0;
+}
+
+/* Positions for circular layout */
+.top {
+  top: 5%;
+  left: 40%;
+  transform: translateX(-50%, 0);
+}
+
+.bottom {
+  bottom: 5%;
+  left: 20%;
+  transform: translateX(-50%, 0);
+}
+
+.left {
+  top: 30%;
+  left: 0;
+  transform: translateY(0, -50%);
+}
+
+.right {
+  top: 40%;
+  right: -3%;
+  transform: translateY(0, -50%);
+}
+
+/* Add subtle hover movement */
+.hover-img:hover {
+  transform: scale(1.1) translateY(-5px);
 }
