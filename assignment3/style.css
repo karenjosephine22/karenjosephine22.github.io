@@ -43,6 +43,7 @@ p {
   font-size: 1.2rem;
 }
 
+/* so when you hover an image, your cursor with show pointer instead of the usual arrow */
 .hover-img {
   position: absolute;
   display: inline-block;
@@ -68,7 +69,7 @@ default one, where the pointer-events allows clicking the link*/
   pointer-events: none;
 }
 
-/* when hovering, swap opacity */
+/* When hovering, swap opacity */
 .hover-img:hover .hover {
   opacity: 1;
 }
@@ -130,6 +131,7 @@ default one, where the pointer-events allows clicking the link*/
   width: 40%;
 }
 
+/* This is for the hover effect of the information */
 .info {
   background: rgba(255, 255, 255, 0.096);
   padding: 15px;
