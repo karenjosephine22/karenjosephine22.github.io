@@ -1,9 +1,10 @@
+/* If there's is no Caveat as the font, sans-serif would come as the second option 
+Then I'm using black as the background colour so it looks neater*/
 body {
   background: black;
   font-family: "Caveat", sans-serif;
-  /* If there's is no Caveat as the font, sans-serif would come as the second option */
-  margin: auto;
-  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -20,6 +21,7 @@ body {
   width: 600px;
   height: 600px;
   margin: auto;
+  padding: 10px;
 }
 
 .title {
@@ -56,13 +58,14 @@ p {
   transition: opacity 0.4s ease;
 }
 
-/* hover image sits directly above the default one */
+/* This is so that the hover image sits directly above the 
+default one, where the pointer-events allows clicking the link*/
 .hover-img .hover {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  pointer-events: none; /* allows clicking the link */
+  pointer-events: none;
 }
 
 /* when hovering, swap opacity */
@@ -74,7 +77,7 @@ p {
   opacity: 0;
 }
 
-/* Positions for circular layout */
+/* Positions for circular layout so that it circles the title*/
 .top {
   top: 5%;
   left: 40%;
@@ -99,7 +102,74 @@ p {
   transform: translateY(0, -50%);
 }
 
-/* Add subtle hover movement */
+/* Then I'm adding a hover movement so that it feels more natural*/
 .hover-img:hover {
   transform: scale(1.1) translateY(-5px);
+}
+
+/* INFORMATION GUIDE */
+.table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%px;
+  max-width: 1400px;
+  height: 600px;
+  gap: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 30%;
+}
+
+.center {
+  text-align: center;
+  width: 40%;
+}
+
+.info {
+  background: rgba(255, 255, 255, 0.096);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.info:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.info h2 {
+  color: #f5e7c6;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Styling for the images in the center */
+#angklung {
+  max-width: 500px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#rebana {
+  max-width: 500px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#gong {
+  max-width: 500px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#tifa {
+  max-width: 500px;
+  align-items: center;
+  cursor: pointer;
 }
